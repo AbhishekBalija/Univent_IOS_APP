@@ -12,11 +12,11 @@ class NetworkManager: ObservableObject {
     static let shared = NetworkManager()
     
     private let baseURLs = [
-        "auth": "http://localhost:8001/api",
-        "events": "http://localhost:8002/api",
-        "announcements": "http://localhost:8003/api",
-        "leaderboard": "http://localhost:8004/api",
-        "admin": "http://localhost:8001/api"
+        "auth": "https://univent-auth-service.onrender.com/api",
+        "events": "https://univent-event-service.onrender.com/api",
+        "announcements": "https://univent-notification-service.onrender.com/api",
+        "leaderboard": "https://univent-leaderboard-service.onrender.com/api",
+        "admin": "https://univent-auth-service.onrender.com/api"
     ]
     
     private var cancellables = Set<AnyCancellable>()
